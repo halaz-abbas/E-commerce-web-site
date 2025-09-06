@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleShop - Online Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="#" class="logo">halazStyle</a>
+
+          <!-- <a class="header-logo" href="#top-nav">
+            <img src="" alt="logo" width="90" height="90" />halazstyle
+
+          </a> -->
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search products..."
+            />
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="nav-icons">
+            <div class="cart-btn" id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count" id="cart-count">0</span>
+            </div>
+            <button class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="close-cart" id="close-cart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <div class="cart-actions">
+          <button class="clear-cart" id="clear-cart">Clear</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>New Collection 2026</h1>
+        <p>Discover the latest trends and get up to 30% off</p>
+        <button
+          class="cta-btn"
+          onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
+        >
+          Shop Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <h3>Recommended Products</h3>
+      <div class="product-list" id="recommended-products"></div>
+
+      <h3 style="margin-top: 40px">Popular Products</h3>
+      <div class="product-list" id="popular-products"></div>
+    </section>
+
+    <!-- Back to Top -->
+    <button id="scrollToTopBtn" class="scrollToTopBtn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>StyleShop</h3>
+          <p>Your one-stop destination for all fashion needs.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street</li>
+            <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> StyleShop. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
