@@ -121,15 +121,6 @@ body {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
 /* Hero */
 .hero {
   height: 500px;
@@ -198,6 +189,8 @@ body {
   border: 1px solid #ddd;
 }
 .product img {
+  height: 300px;
+  aspect-ratio: 16/3;
   max-width: 100%;
   border-radius: 8px;
 }
